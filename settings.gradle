@@ -1,0 +1,2 @@
+rootProject.name='WTest016_OpenGLTest01'
+include ':app'
