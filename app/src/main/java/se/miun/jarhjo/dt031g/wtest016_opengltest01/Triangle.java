@@ -8,12 +8,6 @@ import java.nio.FloatBuffer;
 
 public class Triangle {
 
-//    private final String vertexShaderCode =
-//            "attribute vec4 vPosition;" +
-//                    "void main() {" +
-//                    "  gl_Position = vPosition;" +
-//                    "}";
-
     private final String vertexShaderCode =
             // This matrix member variable provides a hook to manipulate
             // the coordinates of the objects that use this vertex shader
@@ -84,9 +78,7 @@ public class Triangle {
 
         // creates OpenGL ES program executables
         GLES20.glLinkProgram(mProgram);
-
     }
-
 
     private int positionHandle;
     private int colorHandle;
@@ -138,10 +130,5 @@ public class Triangle {
         GLES20.glDisableVertexAttribArray(positionHandle);
 
     }
-
-
-
-
-
 
 }
